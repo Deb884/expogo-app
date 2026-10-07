@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "DIV",
+    "slug": "div",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "div",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#020301",
+    "icon": "./assets/images/android-icon-foreground.png",
+    "android": {
+      "package": "com.div.fitness",
+      "adaptiveIcon": {
+        "backgroundColor": "#020301",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#020301",
+          "imageWidth": 160
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
